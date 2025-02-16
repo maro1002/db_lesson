@@ -1,4 +1,3 @@
-
 Q1
 create table departments (
 department_id int unsigned not null,
