@@ -25,7 +25,7 @@ insert into departments
 
 
 insert into people 
-(person_id, name, email, age, gender)values
+(person_id, name, email, age, gender, department_id) values
 (11, "a", "a@mail", 21, 1, 1),
 (12, "b", "b@mail", 24, 2, 1),
 (13, "c", "c@mail", 32, 1, 1),
@@ -40,7 +40,7 @@ insert into people
 
 
 insert into reports 
-(report_id, person_id, content)values
+(report_id, person_id, content) values
 (11, 11, "test content 1"),
 (12, 12, "test content 2"),
 (13, 14, "test content 3"),
@@ -50,7 +50,7 @@ insert into reports
 (17, 15, "test content 7"),
 (18, 14, "test content 8"),
 (19, 13, "test content 9"),
-(20, 11, "test content 10"),
+(20, 11, "test content 10");
 
 Q4
 update people set department_id = 1 where department_id is null;
